@@ -1,0 +1,49 @@
+{
+  "name": "@inke-design/compile",
+  "version": "1.3.5",
+  "description": "@inke-design/comile",
+  "main": "index.js",
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "imgcook",
+    "DSL",
+    "ikice-materials",
+    "nodejs"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "transform": "node src/flg.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "bin": {
+    "inke-design": "./bin/command.js"
+  },
+  "author": "cuishijie5588",
+  "license": "ISC",
+  "dependencies": {
+    "@imgcook/dsl-helper": "0.0.1-alpha.0",
+    "@inke-design/utils": "1.0.2",
+    "@inkefe/antd-redux-filter-table": "^1.0.3",
+    "chalk": "^4.0.0",
+    "co": "^4.6.0",
+    "commander": "^5.1.0",
+    "gulp": "^4.0.2",
+    "inquirer": "^7.1.0",
+    "lodash": "^4.17.15",
+    "needle": "^2.4.1",
+    "ora": "^4.0.4",
+    "prettier": "^1.11.1",
+    "request": "^2.88.2",
+    "thunkify": "^2.1.2",
+    "vm2": "^3.8.0",
+    "xtemplate": "^5.0.10",
+    "xtpl": "^3.4.0"
+  }
+}
