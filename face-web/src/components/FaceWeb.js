@@ -49,6 +49,7 @@ class FaceWeb extends React.Component {
     });
   }
 
+  // draw
   draw(event) {
     const { onChange } = this.props;
 
