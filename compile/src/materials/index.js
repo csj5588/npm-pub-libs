@@ -13,10 +13,10 @@ exports.run = function(schema) {
     return await new Promise((resolve, reject) => {
       request.get(materialsJsonUrl, function (error, response, body) {
         if (!error && response.statusCode == 200) {
-          console.log('reponse success')
+          // console.log('reponse success')
           resolve(JSON.parse(body).blocks);
         } else {
-          console.log('reponse error')
+          // console.log('reponse error')
           reject('error');
         }
       }); 
@@ -31,7 +31,7 @@ exports.run = function(schema) {
       }
     });
 
-    console.log('choice list success');
+    // console.log('choice list success');
 
     // choices step
     const prompsStep = {
@@ -47,12 +47,12 @@ exports.run = function(schema) {
 
     inquirer.prompt(promps).then(function (answers) {
       const { materials } = answers;
-      console.log('choice answers success', answers);
+      // console.log('choice answers success', answers);
       // loading
       const spinner = ora('Installing, please wait').start();
       spinner.color = 'yellow';
 
-      console.log('path', `npm install ${materials.npm}@${materials.version} --no--save`);
+      // console.log('path', `npm install ${materials.npm}@${materials.version} --no--save`);
 
       child_process.exec(`cd ${path.resolve(__dirname, "./../../")} && npm install ${materials.npm}@${materials.version} --no--save`, function(err, stdout) {
         if (!err) {
