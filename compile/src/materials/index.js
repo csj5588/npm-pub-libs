@@ -59,8 +59,6 @@ exports.run = function(schema) {
           const localPath = `./../../node_modules/${materials.npm}/src`
           copyMaterials(localPath)
           spinner.succeed('installation is complete, enjoy!')
-        } else {
-          console.log('install error')
         }
       })
     })
