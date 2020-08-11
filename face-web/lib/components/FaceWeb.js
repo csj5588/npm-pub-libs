@@ -86,6 +86,9 @@ var FaceWeb = function (_React$Component) {
         }
       });
     }
+
+    // draw
+
   }, {
     key: 'draw',
     value: function draw(event) {
