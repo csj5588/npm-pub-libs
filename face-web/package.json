@@ -1,6 +1,6 @@
 {
   "name": "face-web",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Face recognition and generation of Base64 real-time output components",
   "main": "lib/index.js",
   "files": [
