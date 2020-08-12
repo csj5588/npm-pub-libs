@@ -30,7 +30,9 @@
   "dependencies": {
     "@imgcook/dsl-helper": "0.0.1-alpha.0",
     "@inke-design/utils": "1.0.2",
-    "@inkefe/antd-redux-filter-table": "^1.0.3",
+    "@inkefe/antd-filter-table": "^1.0.39",
+    "@inkefe/antd-filter-table2": "^1.0.21",
+    "@inkefe/antd-redux-filter-table": "^1.0.4",
     "chalk": "^4.0.0",
     "co": "^4.6.0",
     "commander": "^5.1.0",

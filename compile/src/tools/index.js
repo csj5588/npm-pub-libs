@@ -20,6 +20,11 @@ function mkdirPath(pathStr) {
 	return projectPath;
 }
 
+function stringFirstToUpperCase(str) {
+	return str.split('').map((x, i) => !i ? x.toUpperCase() : x).join('');
+}
+
 module.exports = {
-  mkdirPath,
+	mkdirPath,
+	stringFirstToUpperCase,
 }
